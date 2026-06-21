@@ -11,6 +11,13 @@
     </classes>
   </test>
   
+  <test name="TC_parabank_registration">
+  <parameter name="browser" value="Chrome"/>
+  <parameter name="URL" value="https://parabank.parasoft.com/parabank/register.htm"/>
+    <classes>
+     <class name="com.parabank.testcases.TC_parabank_registration"/>
+    </classes>
+  </test>
  
   
 

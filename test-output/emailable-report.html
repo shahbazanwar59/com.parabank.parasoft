@@ -9,10 +9,22 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">TC_parabank_login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,809</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TC_parabank_login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,601</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TC_parabank_registration</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">29,726</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">36,327</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_parabank_login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.testcases.TC_parabank_login</td><td><a href="#m0">openParaBank</a></td><td rowspan="1">1780989844216</td><td rowspan="1">147</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_parabank_login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.testcases.TC_parabank_login</td><td><a href="#m0">openParaBank</a></td><td rowspan="1">1782066977577</td><td rowspan="1">117</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TC_parabank_registration &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.parabank.testcases.TC_parabank_registration</td><td><a href="#m1">testRegistrationWithDuplicateUsername</a></td><td rowspan="1">1782067002184</td><td rowspan="1">4949</td></tr><tr class="failedeven"><td><a href="#m2">testSuccessfulRegistration</a></td><td rowspan="1">1782066982848</td><td rowspan="1">4922</td></tr><tr><th colspan="4">TC_parabank_registration &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.testcases.TC_parabank_registration</td><td><a href="#m3">testRegistrationWithBlankMandatoryFields</a></td><td rowspan="1">1782066995324</td><td rowspan="1">2082</td></tr></tbody>
 </table>
 <h2>TC_parabank_login</h2><h3 id="m0">com.parabank.testcases.TC_parabank_login#openParaBank</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TC_parabank_registration</h2><h3 id="m1">com.parabank.testcases.TC_parabank_registration#testRegistrationWithDuplicateUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Pre-condition failed: first registration with this username did not succeed. expected [true] but found [false]
+	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername(TC_parabank_registration.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.parabank.testcases.TC_parabank_registration#testSuccessfulRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected the welcome/success page to be displayed after registration. expected [true] but found [false]
+	at com.parabank.testcases.TC_parabank_registration.testSuccessfulRegistration(TC_parabank_registration.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.parabank.testcases.TC_parabank_registration#testRegistrationWithBlankMandatoryFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
