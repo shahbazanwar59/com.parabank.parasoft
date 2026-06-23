@@ -31,7 +31,7 @@ public class PO_RegistrationPage {
 	@FindBy(id = "customer.address.street")
 	private WebElement addressInput;
 
-	@FindBy(id = "customer.address.cit")
+	@FindBy(id = "customer.address.ci")
 	private WebElement cityInput;
 
 	@FindBy(id = "customer.address.state")

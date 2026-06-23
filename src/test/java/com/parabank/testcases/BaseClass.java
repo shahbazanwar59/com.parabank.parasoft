@@ -28,7 +28,7 @@ public class BaseClass {
     @AfterMethod
     public void tearDown(ITestResult result) {
         if (driver != null) {
-            driver.quit(); // Ensure browser quits cleanly after test completes
+          //  driver.quit(); // Ensure browser quits cleanly after test completes
         }
     }
 }
