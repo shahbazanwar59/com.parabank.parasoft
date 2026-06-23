@@ -3,6 +3,14 @@
 <suite name="Suite">
 
 	
+<listeners>
+  <!-- Allure TestNG adapter listener -->
+  <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+  <!-- Your custom listener to attach screenshots/throwables -->
+  <listener class-name="com.parabank.testutilities.AllureTestListener"/>
+</listeners>
+	
+	
 
   <test name="TC_parabank_login">
   <parameter name="browser" value="Chrome"/>
