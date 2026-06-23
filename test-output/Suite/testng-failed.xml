@@ -13,6 +13,7 @@
           <include name="tearDownTest"/>
           <include name="tearDown"/>
           <include name="setUpPage"/>
+          <include name="testRegistrationWithBlankMandatoryFields"/>
         </methods>
       </class> <!-- com.parabank.testcases.TC_parabank_registration -->
     </classes>
