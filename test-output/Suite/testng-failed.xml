@@ -8,7 +8,9 @@
       <class name="com.parabank.testcases.TC_parabank_registration">
         <methods>
           <include name="testSuccessfulRegistration"/>
+          <include name="testRegistrationValidationErrors"/>
           <include name="setUp"/>
+          <include name="tearDownTest"/>
           <include name="testRegistrationWithDuplicateUsername"/>
           <include name="tearDown"/>
           <include name="setUpPage"/>
