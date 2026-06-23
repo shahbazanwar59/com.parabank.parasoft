@@ -101,12 +101,11 @@ public class TC_parabank_registration extends BaseClass {
 				"Expected a 'username already exists' validation error on duplicate registration.");
 	}
 
-	@AfterMethod
-	public void tearDownTest(ITestResult result) {
-		if (result.getStatus() == ITestResult.FAILURE) {
-			// Plug in your existing screenshot utility here, e.g.:
-			// ScreenshotsUtilities.captureScreenshot(driver, result.getName());
-			System.out.println("Test failed: " + result.getName());
-		}
-	}
+	/*
+	 * @AfterMethod public void tearDownTest(ITestResult result) { if
+	 * (result.getStatus() == ITestResult.FAILURE) { // Plug in your existing
+	 * screenshot utility here, e.g.: //
+	 * ScreenshotsUtilities.captureScreenshot(driver, result.getName());
+	 * System.out.println("Test failed: " + result.getName()); } }
+	 */
 }
