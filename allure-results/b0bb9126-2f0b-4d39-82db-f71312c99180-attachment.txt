@@ -1,1 +1,0 @@
-java.lang.AssertionError: Pre-condition failed: first registration with this username did not succeed. expected [true] but found [false]
