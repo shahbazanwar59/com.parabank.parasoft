@@ -9,8 +9,8 @@
         <methods>
           <include name="testSuccessfulRegistration"/>
           <include name="setUp"/>
-          <include name="testRegistrationWithDuplicateUsername"/>
           <include name="tearDownTest"/>
+          <include name="testRegistrationWithDuplicateUsername"/>
           <include name="tearDown"/>
           <include name="setUpPage"/>
         </methods>
