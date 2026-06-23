@@ -26,7 +26,7 @@ public class RegistrationDataProvider {
 
 	// Classpath-relative path (resolved via src/test/resources). Falls back to a plain
 	// file path if not found on the classpath - see ExcelUtils.resolveInputStream.
-	private static final String EXCEL_RESOURCE = "testdata/RegistrationTestData.xlsx";
+	private static final String EXCEL_RESOURCE = "src/resources/testdata/RegistrationTestData.xlsx";
 
 	@DataProvider(name = "validRegistrationData")
 	public static Object[][] validRegistrationData() {
