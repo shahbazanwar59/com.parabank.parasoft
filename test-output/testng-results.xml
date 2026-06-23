@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-23T13:48:18 IST" name="Suite" finished-at="2026-06-23T13:48:51 IST" duration-ms="33316">
+  <suite started-at="2026-06-23T13:53:15 IST" name="Suite" finished-at="2026-06-23T13:53:53 IST" duration-ms="37891">
     <groups>
     </groups>
-    <test started-at="2026-06-23T13:48:18 IST" name="TC_parabank_login" finished-at="2026-06-23T13:48:26 IST" duration-ms="8711">
+    <test started-at="2026-06-23T13:53:15 IST" name="TC_parabank_login" finished-at="2026-06-23T13:53:21 IST" duration-ms="6715">
       <class name="com.parabank.testcases.TC_parabank_login">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.parabank.testcases.TC_parabank_login@f58853c]" started-at="2026-06-23T13:48:18 IST" name="setUp" finished-at="2026-06-23T13:48:25 IST" duration-ms="7690" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.parabank.testcases.TC_parabank_login@415b0b49]" started-at="2026-06-23T13:53:15 IST" name="setUp" finished-at="2026-06-23T13:53:21 IST" duration-ms="5753" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -19,24 +19,19 @@
                 <![CDATA[https://parabank.parasoft.com/parabank/index.htm]]>
               </value>
             </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@288cdaab]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="openParaBank()[pri:0, instance:com.parabank.testcases.TC_parabank_login@f58853c]" started-at="2026-06-23T13:48:26 IST" name="openParaBank" finished-at="2026-06-23T13:48:26 IST" duration-ms="217" status="PASS">
+        <test-method signature="openParaBank()[pri:0, instance:com.parabank.testcases.TC_parabank_login@415b0b49]" started-at="2026-06-23T13:53:21 IST" name="openParaBank" finished-at="2026-06-23T13:53:21 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openParaBank -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_login@f58853c]" started-at="2026-06-23T13:48:26 IST" name="tearDown" finished-at="2026-06-23T13:48:26 IST" duration-ms="319" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_login@415b0b49]" started-at="2026-06-23T13:53:21 IST" name="tearDown" finished-at="2026-06-23T13:53:21 IST" duration-ms="400" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=openParaBank status=SUCCESS method=TC_parabank_login.openParaBank()[pri:0, instance:com.parabank.testcases.TC_parabank_login@f58853c] output={null}]]]>
+                <![CDATA[[TestResult name=openParaBank status=SUCCESS method=TC_parabank_login.openParaBank()[pri:0, instance:com.parabank.testcases.TC_parabank_login@415b0b49] output={null}]]]>
               </value>
             </param>
           </params>
@@ -45,9 +40,9 @@
         </test-method> <!-- tearDown -->
       </class> <!-- com.parabank.testcases.TC_parabank_login -->
     </test> <!-- TC_parabank_login -->
-    <test started-at="2026-06-23T13:48:26 IST" name="TC_parabank_registration" finished-at="2026-06-23T13:48:51 IST" duration-ms="24524">
+    <test started-at="2026-06-23T13:53:22 IST" name="TC_parabank_registration" finished-at="2026-06-23T13:53:53 IST" duration-ms="31132">
       <class name="com.parabank.testcases.TC_parabank_registration">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:26 IST" name="setUp" finished-at="2026-06-23T13:48:32 IST" duration-ms="5171" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:22 IST" name="setUp" finished-at="2026-06-23T13:53:27 IST" duration-ms="5835" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,20 +54,15 @@
                 <![CDATA[https://parabank.parasoft.com/parabank/register.htm]]>
               </value>
             </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@23b3aa8c]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:32 IST" name="setUpPage" finished-at="2026-06-23T13:48:33 IST" duration-ms="1120" status="PASS">
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:27 IST" name="setUpPage" finished-at="2026-06-23T13:53:29 IST" duration-ms="1302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method signature="testSuccessfulRegistration()[pri:1, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:33 IST" name="testSuccessfulRegistration" description="Verify a new customer can register successfully with valid details" finished-at="2026-06-23T13:48:34 IST" duration-ms="1603" status="FAIL">
+        <test-method signature="testSuccessfulRegistration()[pri:1, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:29 IST" name="testSuccessfulRegistration" description="Verify a new customer can register successfully with valid details" finished-at="2026-06-23T13:53:30 IST" duration-ms="1649" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#customer\.address\.ci"}
@@ -81,9 +71,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [75785b25db728ffefa799b35a6338d87, findElement {using=id, value=customer.address.ci}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56893}, goog:processID: 12044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56893/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 75785b25db728ffefa799b35a6338d87]]>
+Command: [bd28375152968932f2f8344ecbf5f737, findElement {using=id, value=customer.address.ci}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59737}, goog:processID: 6304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59737/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd28375152968932f2f8344ecbf5f737]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#customer\.address\.ci"}
@@ -92,9 +82,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [75785b25db728ffefa799b35a6338d87, findElement {using=id, value=customer.address.ci}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56893}, goog:processID: 12044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56893/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 75785b25db728ffefa799b35a6338d87
+Command: [bd28375152968932f2f8344ecbf5f737, findElement {using=id, value=customer.address.ci}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59737}, goog:processID: 6304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59737/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bd28375152968932f2f8344ecbf5f737
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -147,29 +137,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSuccessfulRegistration -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:35 IST" name="tearDownTest" finished-at="2026-06-23T13:48:35 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:30 IST" name="tearDownTest" finished-at="2026-06-23T13:53:30 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSuccessfulRegistration status=FAILURE method=TC_parabank_registration.testSuccessfulRegistration()[pri:1, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c] output={null}]]]>
+                <![CDATA[[TestResult name=testSuccessfulRegistration status=FAILURE method=TC_parabank_registration.testSuccessfulRegistration()[pri:1, instance:com.parabank.testcases.TC_parabank_registration@e25951c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:35 IST" name="tearDown" finished-at="2026-06-23T13:48:35 IST" duration-ms="286" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:30 IST" name="tearDown" finished-at="2026-06-23T13:53:31 IST" duration-ms="672" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testSuccessfulRegistration status=FAILURE method=TC_parabank_registration.testSuccessfulRegistration()[pri:1, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c] output={null}]]]>
+                <![CDATA[[TestResult name=testSuccessfulRegistration status=FAILURE method=TC_parabank_registration.testSuccessfulRegistration()[pri:1, instance:com.parabank.testcases.TC_parabank_registration@e25951c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:35 IST" name="setUp" finished-at="2026-06-23T13:48:40 IST" duration-ms="5113" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:31 IST" name="setUp" finished-at="2026-06-23T13:53:36 IST" duration-ms="4825" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,46 +171,41 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
                 <![CDATA[https://parabank.parasoft.com/parabank/register.htm]]>
               </value>
             </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@23b3aa8c]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:40 IST" name="setUpPage" finished-at="2026-06-23T13:48:41 IST" duration-ms="685" status="PASS">
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:36 IST" name="setUpPage" finished-at="2026-06-23T13:53:43 IST" duration-ms="7203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method signature="testRegistrationWithBlankMandatoryFields()[pri:2, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:41 IST" name="testRegistrationWithBlankMandatoryFields" description="Verify validation errors are shown when all mandatory fields are left blank" finished-at="2026-06-23T13:48:42 IST" duration-ms="1070" status="PASS">
+        <test-method signature="testRegistrationWithBlankMandatoryFields()[pri:2, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:43 IST" name="testRegistrationWithBlankMandatoryFields" description="Verify validation errors are shown when all mandatory fields are left blank" finished-at="2026-06-23T13:53:45 IST" duration-ms="1528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistrationWithBlankMandatoryFields -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:42 IST" name="tearDownTest" finished-at="2026-06-23T13:48:42 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:45 IST" name="tearDownTest" finished-at="2026-06-23T13:53:45 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testRegistrationWithBlankMandatoryFields status=SUCCESS method=TC_parabank_registration.testRegistrationWithBlankMandatoryFields()[pri:2, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c] output={null}]]]>
+                <![CDATA[[TestResult name=testRegistrationWithBlankMandatoryFields status=SUCCESS method=TC_parabank_registration.testRegistrationWithBlankMandatoryFields()[pri:2, instance:com.parabank.testcases.TC_parabank_registration@e25951c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:42 IST" name="tearDown" finished-at="2026-06-23T13:48:42 IST" duration-ms="409" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:45 IST" name="tearDown" finished-at="2026-06-23T13:53:45 IST" duration-ms="388" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testRegistrationWithBlankMandatoryFields status=SUCCESS method=TC_parabank_registration.testRegistrationWithBlankMandatoryFields()[pri:2, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c] output={null}]]]>
+                <![CDATA[[TestResult name=testRegistrationWithBlankMandatoryFields status=SUCCESS method=TC_parabank_registration.testRegistrationWithBlankMandatoryFields()[pri:2, instance:com.parabank.testcases.TC_parabank_registration@e25951c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String,org.testng.ITestContext)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:42 IST" name="setUp" finished-at="2026-06-23T13:48:48 IST" duration-ms="5579" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:45 IST" name="setUp" finished-at="2026-06-23T13:53:50 IST" duration-ms="4869" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -232,20 +217,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
                 <![CDATA[https://parabank.parasoft.com/parabank/register.htm]]>
               </value>
             </param>
-            <param index="2">
-              <value>
-                <![CDATA[org.testng.TestRunner@23b3aa8c]]>
-              </value>
-            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:48 IST" name="setUpPage" finished-at="2026-06-23T13:48:49 IST" duration-ms="889" status="PASS">
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:50 IST" name="setUpPage" finished-at="2026-06-23T13:53:51 IST" duration-ms="639" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method signature="testRegistrationWithDuplicateUsername()[pri:3, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:49 IST" name="testRegistrationWithDuplicateUsername" description="Verify registering twice with the same username shows an already-exists error" finished-at="2026-06-23T13:48:50 IST" duration-ms="1550" status="FAIL">
+        <test-method signature="testRegistrationWithDuplicateUsername()[pri:3, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:51 IST" name="testRegistrationWithDuplicateUsername" description="Verify registering twice with the same username shows an already-exists error" finished-at="2026-06-23T13:53:52 IST" duration-ms="1369" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#customer\.address\.ci"}
@@ -254,9 +234,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [131a37223d90a9fdf1d6f4cc1dcca1e2, findElement {using=id, value=customer.address.ci}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63033}, goog:processID: 28908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63033/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 131a37223d90a9fdf1d6f4cc1dcca1e2]]>
+Command: [8895a9f23954146797ca8de739426a1d, findElement {using=id, value=customer.address.ci}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64717}, goog:processID: 22916, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64717/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8895a9f23954146797ca8de739426a1d]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#customer\.address\.ci"}
@@ -265,9 +245,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.27.0', revision: 'd6e718d134'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [131a37223d90a9fdf1d6f4cc1dcca1e2, findElement {using=id, value=customer.address.ci}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63033}, goog:processID: 28908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63033/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 131a37223d90a9fdf1d6f4cc1dcca1e2
+Command: [8895a9f23954146797ca8de739426a1d, findElement {using=id, value=customer.address.ci}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64717}, goog:processID: 22916, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64717/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8895a9f23954146797ca8de739426a1d
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -320,22 +300,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testRegistrationWithDuplicateUsername -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:51 IST" name="tearDownTest" finished-at="2026-06-23T13:48:51 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:52 IST" name="tearDownTest" finished-at="2026-06-23T13:53:52 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testRegistrationWithDuplicateUsername status=FAILURE method=TC_parabank_registration.testRegistrationWithDuplicateUsername()[pri:3, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c] output={null}]]]>
+                <![CDATA[[TestResult name=testRegistrationWithDuplicateUsername status=FAILURE method=TC_parabank_registration.testRegistrationWithDuplicateUsername()[pri:3, instance:com.parabank.testcases.TC_parabank_registration@e25951c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c]" started-at="2026-06-23T13:48:51 IST" name="tearDown" finished-at="2026-06-23T13:48:51 IST" duration-ms="276" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.parabank.testcases.TC_parabank_registration@e25951c]" started-at="2026-06-23T13:53:52 IST" name="tearDown" finished-at="2026-06-23T13:53:53 IST" duration-ms="726" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testRegistrationWithDuplicateUsername status=FAILURE method=TC_parabank_registration.testRegistrationWithDuplicateUsername()[pri:3, instance:com.parabank.testcases.TC_parabank_registration@51bd8b5c] output={null}]]]>
+                <![CDATA[[TestResult name=testRegistrationWithDuplicateUsername status=FAILURE method=TC_parabank_registration.testRegistrationWithDuplicateUsername()[pri:3, instance:com.parabank.testcases.TC_parabank_registration@e25951c] output={null}]]]>
               </value>
             </param>
           </params>
