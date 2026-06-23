@@ -10,11 +10,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
-import io.qameta.allure.Allure;
+import com.parabank.testutilities.ScreenshotsUtilities;
+import io.qameta.allure.Allure; // Required Import
 
 public class BaseClass {
 	
-    public WebDriver driver;
+	WebDriver driver;
 
     @BeforeMethod
     @Parameters({"browser","URL"})
@@ -27,38 +28,26 @@ public class BaseClass {
     @AfterMethod
     public void tearDown(ITestResult result) {
         try {
-            // Check if the TestNG method status points to a Failure
-            if (result.getStatus() == ITestResult.FAILURE) {
-                
+            if (ITestResult.FAILURE == result.getStatus()) {
+                String screenshotPath = "Screenshots/" + result.getName() + "_" + ScreenshotsUtilities.getTimestamp() + ".jpg"; 
                 if (driver != null) {
-                    // 1. Manually force Allure to record the actual failure status and message
-                    Allure.getLifecycle().updateTestCase(testResult -> {
-                        testResult.setStatus(io.qameta.allure.model.Status.FAILED);
-                        if (result.getThrowable() != null) {
-                            testResult.setStatusDetails(new io.qameta.allure.model.StatusDetails()
-                                .setMessage(result.getThrowable().getMessage()));
-                        }
-                    });
-
-                    // 2. Capture and immediately attach the screenshot to the active test context
+                    // 1. Keep your existing local file save logic
+                    ScreenshotsUtilities.takeScreenshot(driver, screenshotPath);
+                    
+                    // 2. Add this block to send the screenshot byte array to Allure
                     byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
                     Allure.addAttachment(
-                        "Teardown_Failure_Screenshot_" + result.getName(), 
-                        "image/png", 
-                        new ByteArrayInputStream(screenshotBytes), 
-                        "png"
+                        "Failure Screenshot - " + result.getName(), 
+                        new ByteArrayInputStream(screenshotBytes)
                     );
-                    
-                    System.out.println("Screenshot successfully integrated into Allure via Lifecycle API.");
                 }
-            }
-        } catch (Exception e) {
-            System.out.println("Error capturing screenshot in teardown: " + e.getMessage());
-        } finally {
-            // 3. Close down the browser context
-            if (driver != null) {
-                driver.quit(); 
+               
+                System.out.println("Screenshot saved locally and attached to Allure: " + screenshotPath);
             }
         }
+        catch (Exception e) {
+            System.out.println("Error in teardown: " + e.getMessage());
+        }
+        // driver.quit(); // Keep or un-comment based on your parallel testing requirements
     }
 }
