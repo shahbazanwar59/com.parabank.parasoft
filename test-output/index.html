@@ -178,33 +178,8 @@ Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (Th
                   <a name="testRegistrationWithDuplicateUsername">
                   </a> <!-- testRegistrationWithDuplicateUsername -->
                   <span class="method-name">testRegistrationWithDuplicateUsername</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer\.address\.ci&quot;}
-  (Session info: chrome=149.0.7827.115)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [feaa70a33bb2c6e8d52383373bc5d12a, findElement {value=customer.address.ci, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58093}, goog:processID: 26408, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58093/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: feaa70a33bb2c6e8d52383373bc5d12a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
-	at com.parabank.pageobjects.RegistrationPage.enterCity(RegistrationPage.java:108)
-	at com.parabank.pageobjects.RegistrationPage.registerNewCustomer(RegistrationPage.java:168)
-	at com.parabank.testcases.TC_parabank_registration.registerFromData(TC_parabank_registration.java:109)
-	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername(TC_parabank_registration.java:71)
+                  <div class="stack-trace">java.lang.AssertionError: Pre-condition failed: first registration with this username did not succeed. expected [true] but found [false]
+	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername(TC_parabank_registration.java:72)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
@@ -322,11 +297,11 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testRegistrationWithDuplicateUsername')
 data.setCell(0, 2, 'com.parabank.testcases.TC_parabank_registration')
-data.setCell(0, 3, 444);
+data.setCell(0, 3, 1774);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'openParaBank')
 data.setCell(1, 2, 'com.parabank.testcases.TC_parabank_login')
-data.setCell(1, 3, 81);
+data.setCell(1, 3, 49);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testSuccessfulRegistration')
 data.setCell(2, 2, 'com.parabank.testcases.TC_parabank_registration')
@@ -339,7 +314,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 525 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -372,36 +347,36 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">openParaBank</span>
-                <span class="method-start">4853 ms</span>
+                <span class="method-start">5787 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=openParaBank status=SUCCESS method=TC_parabank_login.openParaBank()[pri:0, instance...)</span>
-                <span class="method-start">4952 ms</span>
+                <span class="method-start">5858 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.parabank.testcases.TC_parabank_registration</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(Chrome, https://parabank.parasoft.com/parabank/register.htm)</span>
-                <span class="method-start">5026 ms</span>
+                <span class="method-start">5920 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUpPage</span>
-                <span class="method-start">10508 ms</span>
+                <span class="method-start">8713 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testRegistrationWithDuplicateUsername</span>
-                <span class="method-start">14762 ms</span>
+                <span class="method-start">9752 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownTest([TestResult name=testRegistrationWithDuplicateUsername status=FAILURE method=TC_parabank_registratio...)</span>
-                <span class="method-start">15215 ms</span>
+                <span class="method-start">11534 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown([TestResult name=testRegistrationWithDuplicateUsername status=FAILURE method=TC_parabank_registratio...)</span>
-                <span class="method-start">15217 ms</span>
+                <span class="method-start">11539 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -31,7 +31,7 @@ public class RegistrationPage {
 	@FindBy(id = "customer.address.street")
 	private WebElement addressInput;
 
-	@FindBy(id = "customer.address.ci")
+	@FindBy(id = "customer.address.city")
 	private WebElement cityInput;
 
 	@FindBy(id = "customer.address.state")

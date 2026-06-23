@@ -121,6 +121,8 @@
       <version>2.25.0</version>
     </dependency>
 
+
+
     <!-- Lombok Maven Plugin -->
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -141,7 +143,17 @@
     <version>2.0.1</version>
 	</dependency>
     
-    
-   
   </dependencies>
+  
+<!-- Optionally add the Maven plugin to generate reports -->
+<build>
+  <plugins>
+    <plugin>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-maven</artifactId>
+      <version>2.11.2</version>
+    </plugin>
+  </plugins>
+</build>
+
 </project>
