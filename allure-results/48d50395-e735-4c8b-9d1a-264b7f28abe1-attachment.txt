@@ -1,0 +1,1 @@
+java.lang.RuntimeException: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx

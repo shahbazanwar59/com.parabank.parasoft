@@ -9,12 +9,12 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">TC_parabank_login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,896</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">TC_parabank_registration</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">5,840</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">11,736</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">TC_parabank_login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">6,905</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TC_parabank_registration</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">7,206</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">14,111</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_parabank_login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.testcases.TC_parabank_login</td><td><a href="#m0">openParaBank</a></td><td rowspan="1">1782218574607</td><td rowspan="1">49</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">TC_parabank_registration &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.parabank.testcases.TC_parabank_registration</td><td><a href="#m1">testRegistrationValidationErrors</a></td><td rowspan="1">1782218574728</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m2">testRegistrationWithDuplicateUsername</a></td><td rowspan="1">1782218578572</td><td rowspan="1">1774</td></tr><tr class="failedeven"><td><a href="#m3">testSuccessfulRegistration</a></td><td rowspan="1">1782218574713</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_parabank_login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.testcases.TC_parabank_login</td><td><a href="#m0">openParaBank</a></td><td rowspan="1">1782233939619</td><td rowspan="1">189</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TC_parabank_registration &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.parabank.testcases.TC_parabank_registration</td><td><a href="#m1">testRegistrationValidationErrors</a></td><td rowspan="1">1782233939981</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m2">testRegistrationWithDuplicateUsername</a></td><td rowspan="1">1782233945170</td><td rowspan="1">1340</td></tr><tr class="failedeven"><td><a href="#m3">testSuccessfulRegistration</a></td><td rowspan="1">1782233939949</td><td rowspan="1">0</td></tr></tbody>
 </table>
 <h2>TC_parabank_login</h2><h3 id="m0">com.parabank.testcases.TC_parabank_login#openParaBank</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h2>TC_parabank_registration</h2><h3 id="m1">com.parabank.testcases.TC_parabank_registration#testRegistrationValidationErrors</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
@@ -32,8 +32,33 @@ Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (Th
 	at com.parabank.testutilities.ExcelUtils.readSheetAsMaps(ExcelUtils.java:38)
 	... 31 more
 ... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.parabank.testcases.TC_parabank_registration#testRegistrationWithDuplicateUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Pre-condition failed: first registration with this username did not succeed. expected [true] but found [false]
-	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername(TC_parabank_registration.java:72)
+<h3 id="m2">com.parabank.testcases.TC_parabank_registration#testRegistrationWithDuplicateUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer\.address\.cit&quot;}
+  (Session info: chrome=149.0.7827.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b2e9444537f946f2b0064328fe81b9d, findElement {value=customer.address.cit, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54548}, goog:processID: 9752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54548/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b2e9444537f946f2b0064328fe81b9d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
+	at com.parabank.pageobjects.RegistrationPage.enterCity(RegistrationPage.java:108)
+	at com.parabank.pageobjects.RegistrationPage.registerNewCustomer(RegistrationPage.java:168)
+	at com.parabank.testcases.TC_parabank_registration.registerFromData(TC_parabank_registration.java:109)
+	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername(TC_parabank_registration.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">com.parabank.testcases.TC_parabank_registration#testSuccessfulRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx

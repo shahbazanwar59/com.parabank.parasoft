@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jun 23 18:12:54 IST 2026</td>
+<td>Started on:</td><td>Tue Jun 23 22:28:59 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5840 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7206 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.parabank.testcases.TC_parabank_registration.testSuccessfulRegistration()'><b>testSuccessfulRegistration</b><br>Test class: com.parabank.testcases.TC_parabank_registration<br>Test method: Verify a new customer can register successfully with valid details</td>
+<td title='com.parabank.testcases.TC_parabank_registration.testRegistrationValidationErrors()'><b>testRegistrationValidationErrors</b><br>Test class: com.parabank.testcases.TC_parabank_registration<br>Test method: Verify validation errors are shown for various invalid/incomplete submissions</td>
 <td><div><pre>java.lang.RuntimeException: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 Caused by: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
 	at com.parabank.testutilities.ExcelUtils.readSheetAsMaps(ExcelUtils.java:77)
-	at com.parabank.testdata.RegistrationDataProvider.validRegistrationData(RegistrationDataProvider.java:33)
+	at com.parabank.testdata.RegistrationDataProvider.invalidRegistrationData(RegistrationDataProvider.java:44)
 	... 25 more
 Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (The system cannot find the path specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
@@ -91,8 +91,8 @@ Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (Th
 	at com.parabank.testutilities.ExcelUtils.resolveInputStream(ExcelUtils.java:88)
 	at com.parabank.testutilities.ExcelUtils.readSheetAsMaps(ExcelUtils.java:38)
 	... 31 more
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace845388562", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace845388562'><pre>java.lang.RuntimeException: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace605686842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace605686842'><pre>java.lang.RuntimeException: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
@@ -121,7 +121,7 @@ Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (Th
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Caused by: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
 	at com.parabank.testutilities.ExcelUtils.readSheetAsMaps(ExcelUtils.java:77)
-	at com.parabank.testdata.RegistrationDataProvider.validRegistrationData(RegistrationDataProvider.java:33)
+	at com.parabank.testdata.RegistrationDataProvider.invalidRegistrationData(RegistrationDataProvider.java:44)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -138,18 +138,68 @@ Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (Th
 	... 31 more
 </pre></div></td>
 <td>0</td>
-<td>com.parabank.testcases.TC_parabank_registration@51bd8b5c</td></tr>
+<td>com.parabank.testcases.TC_parabank_registration@6b0d80ed</td></tr>
 <tr>
 <td title='com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername()'><b>testRegistrationWithDuplicateUsername</b><br>Test class: com.parabank.testcases.TC_parabank_registration<br>Test method: Verify registering twice with the same username shows an already-exists error</td>
-<td><div><pre>java.lang.AssertionError: Pre-condition failed: first registration with this username did not succeed. expected [true] but found [false]
-	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername(TC_parabank_registration.java:72)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer\.address\.cit&quot;}
+  (Session info: chrome=149.0.7827.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b2e9444537f946f2b0064328fe81b9d, findElement {value=customer.address.cit, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54548}, goog:processID: 9752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54548/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b2e9444537f946f2b0064328fe81b9d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
+	at com.parabank.pageobjects.RegistrationPage.enterCity(RegistrationPage.java:108)
+	at com.parabank.pageobjects.RegistrationPage.registerNewCustomer(RegistrationPage.java:168)
+	at com.parabank.testcases.TC_parabank_registration.registerFromData(TC_parabank_registration.java:109)
+	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername(TC_parabank_registration.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1145165159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1145165159'><pre>java.lang.AssertionError: Pre-condition failed: first registration with this username did not succeed. expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername(TC_parabank_registration.java:72)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1779479139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1779479139'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer\.address\.cit&quot;}
+  (Session info: chrome=149.0.7827.115)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b2e9444537f946f2b0064328fe81b9d, findElement {value=customer.address.cit, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54548}, goog:processID: 9752, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54548/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4b2e9444537f946f2b0064328fe81b9d
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.clear(Unknown Source)
+	at com.parabank.pageobjects.RegistrationPage.enterCity(RegistrationPage.java:108)
+	at com.parabank.pageobjects.RegistrationPage.registerNewCustomer(RegistrationPage.java:168)
+	at com.parabank.testcases.TC_parabank_registration.registerFromData(TC_parabank_registration.java:109)
+	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername(TC_parabank_registration.java:71)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -178,14 +228,14 @@ Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (Th
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>1</td>
-<td>com.parabank.testcases.TC_parabank_registration@51bd8b5c</td></tr>
+<td>com.parabank.testcases.TC_parabank_registration@6b0d80ed</td></tr>
 <tr>
-<td title='com.parabank.testcases.TC_parabank_registration.testRegistrationValidationErrors()'><b>testRegistrationValidationErrors</b><br>Test class: com.parabank.testcases.TC_parabank_registration<br>Test method: Verify validation errors are shown for various invalid/incomplete submissions</td>
+<td title='com.parabank.testcases.TC_parabank_registration.testSuccessfulRegistration()'><b>testSuccessfulRegistration</b><br>Test class: com.parabank.testcases.TC_parabank_registration<br>Test method: Verify a new customer can register successfully with valid details</td>
 <td><div><pre>java.lang.RuntimeException: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 Caused by: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
 	at com.parabank.testutilities.ExcelUtils.readSheetAsMaps(ExcelUtils.java:77)
-	at com.parabank.testdata.RegistrationDataProvider.invalidRegistrationData(RegistrationDataProvider.java:44)
+	at com.parabank.testdata.RegistrationDataProvider.validRegistrationData(RegistrationDataProvider.java:33)
 	... 25 more
 Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (The system cannot find the path specified)
 	at java.base/java.io.FileInputStream.open0(Native Method)
@@ -195,8 +245,8 @@ Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (Th
 	at com.parabank.testutilities.ExcelUtils.resolveInputStream(ExcelUtils.java:88)
 	at com.parabank.testutilities.ExcelUtils.readSheetAsMaps(ExcelUtils.java:38)
 	... 31 more
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace842422776", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace842422776'><pre>java.lang.RuntimeException: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2034975583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2034975583'><pre>java.lang.RuntimeException: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
 	at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
@@ -225,7 +275,7 @@ Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (Th
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 Caused by: java.lang.RuntimeException: Failed to read Excel file: testdata/RegistrationTestData.xlsx
 	at com.parabank.testutilities.ExcelUtils.readSheetAsMaps(ExcelUtils.java:77)
-	at com.parabank.testdata.RegistrationDataProvider.invalidRegistrationData(RegistrationDataProvider.java:44)
+	at com.parabank.testdata.RegistrationDataProvider.validRegistrationData(RegistrationDataProvider.java:33)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -242,7 +292,7 @@ Caused by: java.io.FileNotFoundException: testdata\RegistrationTestData.xlsx (Th
 	... 31 more
 </pre></div></td>
 <td>0</td>
-<td>com.parabank.testcases.TC_parabank_registration@51bd8b5c</td></tr>
+<td>com.parabank.testcases.TC_parabank_registration@6b0d80ed</td></tr>
 </table><p>
 </body>
 </html>
