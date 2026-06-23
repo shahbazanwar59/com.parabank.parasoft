@@ -9,27 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">TC_parabank_login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,005</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">TC_parabank_registration</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">61,096</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">73,101</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">TC_parabank_login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,197</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TC_parabank_registration</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">23,753</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">31,950</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_parabank_login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.testcases.TC_parabank_login</td><td><a href="#m0">openParaBank</a></td><td rowspan="1">1782199463737</td><td rowspan="1">106</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">TC_parabank_registration &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">com.parabank.testcases.TC_parabank_registration</td><td><a href="#m1">testRegistrationWithBlankMandatoryFields</a></td><td rowspan="1">1782199501757</td><td rowspan="1">3164</td></tr><tr class="failedeven"><td><a href="#m2">testRegistrationWithDuplicateUsername</a></td><td rowspan="1">1782199524456</td><td rowspan="1">351</td></tr><tr class="failedeven"><td><a href="#m3">testSuccessfulRegistration</a></td><td rowspan="1">1782199487068</td><td rowspan="1">398</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TC_parabank_login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.testcases.TC_parabank_login</td><td><a href="#m0">openParaBank</a></td><td rowspan="1">1782201708547</td><td rowspan="1">130</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TC_parabank_registration &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.parabank.testcases.TC_parabank_registration</td><td><a href="#m1">testRegistrationWithDuplicateUsername</a></td><td rowspan="1">1782201730814</td><td rowspan="1">1551</td></tr><tr class="failedeven"><td><a href="#m2">testSuccessfulRegistration</a></td><td rowspan="1">1782201714355</td><td rowspan="1">1008</td></tr><tr><th colspan="4">TC_parabank_registration &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.parabank.testcases.TC_parabank_registration</td><td><a href="#m3">testRegistrationWithBlankMandatoryFields</a></td><td rowspan="1">1782201723076</td><td rowspan="1">1603</td></tr></tbody>
 </table>
 <h2>TC_parabank_login</h2><h3 id="m0">com.parabank.testcases.TC_parabank_login#openParaBank</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TC_parabank_registration</h2><h3 id="m1">com.parabank.testcases.TC_parabank_registration#testRegistrationWithBlankMandatoryFields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected validation error messages when submitting an empty registration form. expected [false] but found [true]
-	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithBlankMandatoryFields(TC_parabank_registration.java:77)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.parabank.testcases.TC_parabank_registration#testRegistrationWithDuplicateUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer\.address\.cit&quot;}
+<h2>TC_parabank_registration</h2><h3 id="m1">com.parabank.testcases.TC_parabank_registration#testRegistrationWithDuplicateUsername</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer\.address\.cit&quot;}
   (Session info: chrome=149.0.7827.115)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c94252344345c8c8d3d824e136695dd4, findElement {value=customer.address.cit, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53837}, goog:processID: 26656, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53837/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c94252344345c8c8d3d824e136695dd4
+Command: [ca3a5027566a4775ee2dbf28dc0857b9, findElement {using=id, value=customer.address.cit}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57012}, goog:processID: 16624, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57012/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ca3a5027566a4775ee2dbf28dc0857b9
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -49,15 +45,15 @@ Session ID: c94252344345c8c8d3d824e136695dd4
 	at com.parabank.testcases.TC_parabank_registration.testRegistrationWithDuplicateUsername(TC_parabank_registration.java:88)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.parabank.testcases.TC_parabank_registration#testSuccessfulRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer\.address\.cit&quot;}
+<h3 id="m2">com.parabank.testcases.TC_parabank_registration#testSuccessfulRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#customer\.address\.cit&quot;}
   (Session info: chrome=149.0.7827.115)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.11&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [90d3b76d18606ea8ed171c73f7c7a6e1, findElement {value=customer.address.cit, using=id}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58064}, goog:processID: 12972, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58064/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 90d3b76d18606ea8ed171c73f7c7a6e1
+Command: [37c8e5ec8c6855ff60e536a16160be03, findElement {using=id, value=customer.address.cit}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59245}, goog:processID: 20876, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59245/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 37c8e5ec8c6855ff60e536a16160be03
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -77,5 +73,6 @@ Session ID: 90d3b76d18606ea8ed171c73f7c7a6e1
 	at com.parabank.testcases.TC_parabank_registration.testSuccessfulRegistration(TC_parabank_registration.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.parabank.testcases.TC_parabank_registration#testRegistrationWithBlankMandatoryFields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

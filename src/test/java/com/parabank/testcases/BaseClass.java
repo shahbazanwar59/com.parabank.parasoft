@@ -15,7 +15,7 @@ import io.qameta.allure.Allure; // Required Import
 
 public class BaseClass {
 	
-	WebDriver driver;
+	public WebDriver driver;
 
     @BeforeMethod
     @Parameters({"browser","URL"})
@@ -27,27 +27,8 @@ public class BaseClass {
     
     @AfterMethod
     public void tearDown(ITestResult result) {
-        try {
-            if (ITestResult.FAILURE == result.getStatus()) {
-                String screenshotPath = "Screenshots/" + result.getName() + "_" + ScreenshotsUtilities.getTimestamp() + ".jpg"; 
-                if (driver != null) {
-                    // 1. Keep your existing local file save logic
-                    ScreenshotsUtilities.takeScreenshot(driver, screenshotPath);
-                    
-                    // 2. Add this block to send the screenshot byte array to Allure
-                    byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-                    Allure.addAttachment(
-                        "Failure Screenshot - " + result.getName(), 
-                        new ByteArrayInputStream(screenshotBytes)
-                    );
-                }
-               
-                System.out.println("Screenshot saved locally and attached to Allure: " + screenshotPath);
-            }
+        if (driver != null) {
+            driver.quit(); // Ensure browser quits cleanly after test completes
         }
-        catch (Exception e) {
-            System.out.println("Error in teardown: " + e.getMessage());
-        }
-        // driver.quit(); // Keep or un-comment based on your parallel testing requirements
     }
 }

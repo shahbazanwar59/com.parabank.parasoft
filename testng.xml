@@ -3,6 +3,11 @@
 <suite name="Suite">
 
 
+    <listeners>
+        <listener class-name="com.parabank.testutilities.AllureListener" />
+    </listeners>
+
+
   <test name="TC_parabank_login">
   <parameter name="browser" value="Chrome"/>
   <parameter name="URL" value="https://parabank.parasoft.com/parabank/index.htm"/>
